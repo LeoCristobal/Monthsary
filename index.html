@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 2nd Months of Love</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url("picture.jpg") no-repeat center center/cover;
+        background-attachment: fixed;
+      }
+
+      .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        display: none;
+      }
+
+      .title {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #d6336c;
+      }
+
+      .letter {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+        white-space: pre-wrap;
+      }
+
+      .signature {
+        font-size: 16px;
+        color: #333;
+        margin-top: 20px;
+      }
+
+      .show-button {
+        padding: 15px;
+        font-size: 24px;
+        color: #fff;
+        background-color: #d6336c;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .show-button::before,
+      .show-button::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 15px;
+        background-color: #d6336c;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+      }
+
+      .show-button::before {
+        left: -30px;
+      }
+
+      .show-button::after {
+        right: -30px;
+      }
+
+      .show-button:hover {
+        background-color: #c0285b;
+      }
+    </style>
+    <script>
+      var audio = new Audio("music.mp3");
+      audio.loop = true;
+      audio.autoplay = false;
+
+      function showLetterAndPlayMusic() {
+        audio.play(); // Play music
+        document.querySelector(".container").style.display = "block"; // Show letter
+        document.querySelector(".show-button").style.display = "none"; // Hide the button
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Button to show letter and play music -->
+    <button class="show-button" onclick="showLetterAndPlayMusic()">❤️</button>
+
+    <div class="container">
+      <div class="title">To My Beloved Girlfriend</div>
+      <div class="letter">
+        Hi po Princess Azumi Nichole B. Metillo, my only one, my love of my
+        life, my everything! Happy 18th Month of Love! 🥰
+        Napaka solid na ng relasyon natin mi, d ko parin tlga inexpect na mapapabago mo yung dating ako na babaero HAHAHHA,
+        Sana mas tatatag pa tayo soon and sana walang hiwalayan ha kasi ikaw nlng po yung meron ako at kakampi ko,
+        Lagi mo pong tatandaan na kahit magkalayo man tayo, ikaw at ikaw ang lagi kong pipiliin kahit anong mangayari.
+        Alam ko at alam mo na magkakampi tayo pero madalas lagi tayong magkaaway sa mga bagay na ewan, pero kahit ganun pa man
+        mahal na mahal parin talaga kita. Maraming salamat po kasi kahit lagi tayong magkaaway, di mo paring iniisip na iwan ako,
+        kahit ganun pa man, lagi mo paring pinipili na mag stay sakin/sa relasyon natin. Anlaki ng pagpapasalamat ko kay lord kasi
+        binigay nya yung babaeng pinapangarap ko kahit sobrang daming lalake yung nangangarap sayo at binigay nya din sakin yung babaeng makakapag bago ng ugali ko at turuan ako kung
+        pano mag mahal ng totoo at pano makuntento sa isang babae. Don't worry love, di ko po gagawin yung ginawa ni N sayo,
+        Nakuha mo na po yung lalakeng mamahalin ka ng totoo at nakuha mo na din yung lalakeng mag i-stay sayo kahit anong mangyari.
+        Lagi kong hinihiling kay lord na sana ikaw yung babaeng ihaharap ko sa altar soon. Iloveyou so much mwamwamwamwa, my love, Happy 18th Monthsary po ulit satin
+        
+            Love always, 
+                Leo
+      </div>
+      <div class="signature">❤️</div>
+    </div>
+  </body>
+</html>
